@@ -1,6 +1,6 @@
 html * {
   font-family: 'Raleway', sans-serif;
-  color: #333;
+  color: #333333;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -111,6 +111,7 @@ header img {
 }
 
 #about .container-tags {
+  margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +121,61 @@ header img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#about .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  -ms-flex-wrap: 25%;
+      flex-wrap: 25%;
+  margin-bottom: 24px;
+}
+
+#about .tag .tag-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#about .tag .tag-desc {
+  font-size: 18px;
+  margin: 0px;
+  text-align: center;
+}
+
+.container-resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+.container-resume .btn {
+  font-size: 22px;
+  padding: 8px 24px;
+  color: #05ac72;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 2px #05ac72;
 }
 
 /*
@@ -135,12 +191,12 @@ nav {
     padding: 0;
     overflow: hidden;
   }
+  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
   li {
     float: right;
 
     a {
       display: block;
-      color: $black;
       text-align: center;
       padding: 10px 10px;
       text-decoration: none;

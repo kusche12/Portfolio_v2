@@ -80,9 +80,44 @@ header {
   }
 
   .container-tags {
+    margin-top: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .tag {
+    @include flexAlignCenter();
+    width: 150px;
+    flex-wrap: 25%;
+    margin-bottom: 24px;
+
+    .tag-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+    .tag-desc {
+      font-size: 18px;
+      margin: 0px;
+      text-align: center; // TODO: MAKE THIS ALIGN AT FLEX-START ONE MIN 768PX
+    }
+  }
+}
+
+.container-resume {
+  @include flexAlignCenter();
+  margin-top: 48px;
+  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
+  .btn {
+    font-size: 22px;
+    padding: 8px 24px;
+    color: $secondaryGreen;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px $secondaryGreen;
   }
 }
 
@@ -99,12 +134,12 @@ nav {
     padding: 0;
     overflow: hidden;
   }
+  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
   li {
     float: right;
 
     a {
       display: block;
-      color: $black;
       text-align: center;
       padding: 10px 10px;
       text-decoration: none;

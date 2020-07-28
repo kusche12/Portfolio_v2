@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="author" content="Kyle Kusche" />
     <meta
       name="description"
@@ -71,7 +74,77 @@
         <div class="arrow-down arrow-bottom"></div>
 
         <div class="container-tags">
-          <div class="tag"></div>
+          <div class="tag">
+            <img
+              srcset="./img/house_xs.png 101w, ./img/house_md.png 201w"
+              sizes="(max-width: 767px) 100px, 125px"
+              src="./img/house_md.png"
+              alt="house"
+            />
+            <p class="tag-title">Approachable.</p>
+            <p class="tag-desc">
+              I create designs that are intuitive, engaging, and fun.
+            </p>
+          </div>
+
+          <div class="tag">
+            <img
+              srcset="./img/key_xs.png 101w, ./img/key_md.png 201w"
+              sizes="(max-width: 767px) 100px, 125px"
+              src="./img/key_md.png"
+              alt="key"
+            />
+            <p class="tag-title">Accessible.</p>
+            <p class="tag-desc">
+              I understand the importance of usability for every user.
+            </p>
+          </div>
+
+          <div class="tag">
+            <img
+              srcset="./img/device_xs.png 101w, ./img/device_md.png 201w"
+              sizes="(max-width: 767px) 100px, 125px"
+              src="./img/device_md.png"
+              alt="responsive devices"
+            />
+            <p class="tag-title">Responsive.</p>
+            <p class="tag-desc">
+              I build products that are scalable to any device.
+            </p>
+          </div>
+
+          <div class="tag">
+            <img
+              srcset="./img/coffee_xs.png 101w, ./img/coffee_md.png 201w"
+              sizes="(max-width: 767px) 100px, 125px"
+              src="./img/coffee_md.png"
+              alt="cup of coffee"
+            />
+            <p class="tag-title">Efficient.</p>
+            <p class="tag-desc">
+              Fueled by coffee. I won't stop until the job is done.
+            </p>
+          </div>
+        </div>
+        <div class="container-resume">
+          <button
+            onClick="window.location.href = 'img/resume.pdf'"
+            target="_blank"
+            class="btn btn-white"
+          >
+            View my Resume
+          </button>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="project">
+          <img
+            srcset="./img/coffee_xs.png 101w, ./img/coffee_md.png 201w"
+            sizes="(max-width: 767px) 100px, 125px"
+            src="./img/coffee_md.png"
+            alt="cup of coffee"
+          />
         </div>
       </section>
     </main>

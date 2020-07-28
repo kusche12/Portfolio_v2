@@ -1,0 +1,16 @@
+$primaryGreen: #0ad48b;
+$secondaryGreen: #05ac72;
+$black: #333333;
+
+html * {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+@mixin flexAlignCenter() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

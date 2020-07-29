@@ -5,6 +5,11 @@ html * {
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .hide-xs {
   display: none;
 }
@@ -25,8 +30,8 @@ header {
 
 header h1 {
   font-size: 40px;
+  padding-top: 24px;
   margin-top: 48px;
-  margin-bottom: 0px;
 }
 
 header .highlight {
@@ -34,7 +39,7 @@ header .highlight {
   color: #0ad48b;
 }
 
-header p {
+header .header-desc {
   font-size: 30px;
   text-align: center;
   position: relative;
@@ -247,6 +252,7 @@ header img {
 }
 
 .project:nth-child(odd) {
+  width: 100%;
   background-color: #f1f1f1;
 }
 
@@ -288,7 +294,7 @@ header img {
 }
 
 .container-contact .form-container {
-  margin-top: 72px;
+  margin-top: 48px;
   width: 90%;
   height: 400px;
   padding-top: 16px;
@@ -421,31 +427,53 @@ footer .copyright i {
 }
 
 @media (min-width: 768px) {
-  /*
-nav {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  .hide-xs {
+    display: inline;
   }
-  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
-  li {
-    float: right;
-
-    a {
-      display: block;
-      text-align: center;
-      padding: 10px 10px;
-      text-decoration: none;
-    }
+  .hide-md {
+    display: none;
   }
-
-  .logo {
+  nav {
+    width: 90%;
+  }
+  nav p {
     float: left;
+    font-size: 24px;
   }
-}
-*/
+  nav p a {
+    color: #333333;
+    text-decoration: none;
+  }
+  nav ul {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 24px;
+  }
+  nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+  }
+  header h1 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    font-size: 48px;
+  }
+  header .header-desc {
+    top: 0px;
+    margin-top: 8px;
+    font-size: 36px;
+  }
+  header img {
+    bottom: 0px;
+    width: 250px;
+  }
   .proj-img {
     width: 500px;
   }

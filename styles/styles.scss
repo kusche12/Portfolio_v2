@@ -10,8 +10,8 @@ header {
 
   h1 {
     font-size: 40px;
+    padding-top: 24px;
     margin-top: 48px;
-    margin-bottom: 0px;
   }
 
   .highlight {
@@ -19,7 +19,7 @@ header {
     color: $primaryGreen;
   }
 
-  p {
+  .header-desc {
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -159,6 +159,7 @@ header {
 }
 
 .project:nth-child(odd) {
+  width: 100%;
   background-color: #f1f1f1;
 }
 
@@ -186,7 +187,7 @@ header {
   }
 
   .form-container {
-    margin-top: 72px;
+    margin-top: 48px;
     width: 90%;
     height: 400px;
     padding-top: 16px;
@@ -266,35 +267,59 @@ footer {
   }
 }
 
-@media (min-width: 576px) {
-}
-
 @media (min-width: 768px) {
-  /*
-nav {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  .hide-xs {
+    display: inline;
   }
-  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
-  li {
-    float: right;
+  .hide-md {
+    display: none;
+  }
 
-    a {
-      display: block;
-      text-align: center;
-      padding: 10px 10px;
-      text-decoration: none;
+  nav {
+    width: 90%;
+    p {
+      float: left;
+      font-size: 24px;
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+      float: right;
+      li {
+        list-style-type: none;
+        display: inline;
+        font-size: 24px;
+        a {
+          color: $black;
+          text-decoration: none;
+          line-height: 70px;
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+  header {
+    h1 {
+      padding-top: 0px;
+      margin-bottom: 0px;
+      font-size: 48px;
+    }
+    .header-desc {
+      top: 0px;
+      margin-top: 8px;
+      font-size: 36px;
+    }
+    img {
+      bottom: 0px;
+      width: 250px;
     }
   }
 
-  .logo {
-    float: left;
-  }
-}
-*/
   .proj-img {
     width: 500px;
   }

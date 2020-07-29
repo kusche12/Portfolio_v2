@@ -234,6 +234,38 @@ header {
   }
 }
 
+footer {
+  @include flexAlignCenter();
+  margin-top: 72px;
+  background-color: $black;
+  .icons {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    i {
+      color: #c4c4c4;
+    }
+  }
+  p {
+    margin: 0px;
+    a {
+      color: #c4c4c4;
+    }
+    color: #c4c4c4;
+  }
+  .copyright {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    color: $primaryGreen;
+    i {
+      color: $primaryGreen;
+    }
+  }
+}
+
 @media (min-width: 576px) {
 }
 

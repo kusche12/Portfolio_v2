@@ -366,6 +366,60 @@ header img {
   width: 87%;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 72px;
+  background-color: #333333;
+}
+
+footer .icons {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+}
+
+footer .icons i {
+  color: #c4c4c4;
+}
+
+footer p {
+  margin: 0px;
+  color: #c4c4c4;
+}
+
+footer p a {
+  color: #c4c4c4;
+}
+
+footer .copyright {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  color: #0ad48b;
+}
+
+footer .copyright i {
+  color: #0ad48b;
+}
+
 @media (min-width: 768px) {
   /*
 nav {

@@ -1,3 +1,5 @@
+/* TODO: FIX THE GREEN LINE ON THE DOWN WHITE ARROW */
+/* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
 html * {
   font-family: 'Raleway', sans-serif;
   color: #333333;
@@ -26,11 +28,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header h1 {
   font-size: 40px;
-  padding-top: 24px;
   margin-top: 48px;
 }
 
@@ -42,14 +46,11 @@ header .highlight {
 header .header-desc {
   font-size: 30px;
   text-align: center;
-  position: relative;
-  top: 500px;
 }
 
 header img {
-  width: 300px;
-  position: relative;
-  bottom: 100px;
+  width: 250px;
+  margin-bottom: 48px;
 }
 
 #about .contain-arrows {
@@ -63,20 +64,31 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  background-color: #0ad48b;
-  height: 600px;
+  background-color: white;
+  margin-bottom: 72px;
 }
 
 #about .arrow-down {
   width: 100%;
   height: 50px;
-  background-color: white;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-          clip-path: polygon(50% 100%, 0 0, 100% 0);
-  border-width: 10px;
-  border-color: black;
+  background-color: #0ad48b;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   z-index: 900;
+}
+
+#about .background-container-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0ad48b;
 }
 
 #about .container-about {
@@ -90,29 +102,28 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
+  min-height: 450px;
   background-color: #0ad48b;
-  height: 100vh;
 }
 
 #about .container-about h2 {
-  margin-top: 50px;
   color: white;
   font-size: 36px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 #about .container-about p {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-}
-
-#about .arrow-bottom {
-  background-color: #0ad48b;
-  position: relative;
-  top: -1px;
+  text-rendering: optimizeLegibility;
+  line-height: 36px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #about .container-tags {
@@ -186,6 +197,7 @@ header img {
 .btn-fill {
   color: white;
   background-color: #0ad48b;
+  border: solid 2px #0ad48b;
 }
 
 .container-projects {
@@ -426,7 +438,7 @@ footer .copyright i {
   color: #0ad48b;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .hide-xs {
     display: inline;
   }
@@ -435,44 +447,107 @@ footer .copyright i {
   }
   nav {
     width: 90%;
+    height: 100px;
+    overflow: hidden;
   }
-  nav p {
+  nav .logo {
     float: left;
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 36px;
   }
-  nav p a {
+  nav .logo a {
     color: #333333;
     text-decoration: none;
+  }
+  nav .logo:after {
+    content: '';
+    display: block;
+    margin: 10 auto;
+    /* This will center the border. */
+    width: 30%;
+    /* Change this to whatever width you want. */
+    border-bottom: 4px solid #0ad48b;
+    border-top: 4px solid #0ad48b;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav .logo:hover:after {
+    width: 45%;
+    /* This will be the new width of your border when on hover */
   }
   nav ul {
     padding: 0px;
     margin: 0px;
     float: right;
+    margin-top: 30px;
   }
   nav ul li {
     list-style-type: none;
-    display: inline;
-    font-size: 24px;
+    display: inline-block;
+    font-size: 22px;
   }
   nav ul li a {
     color: #333333;
     text-decoration: none;
-    line-height: 70px;
+    line-height: 30px;
     padding: 5px 15px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  nav ul li:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    /* This will center the border. */
+    width: 0%;
+    /* Change this to whatever width you want. */
+    border-bottom: 3px solid #0ad48b;
+    border-top: 3px solid #0ad48b;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav ul a:hover {
+    color: #808080;
+  }
+  nav ul li:hover:after {
+    width: 35%;
+  }
+  header {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    height: auto;
   }
   header h1 {
-    padding-top: 0px;
+    margin-top: 12px;
     margin-bottom: 0px;
-    font-size: 48px;
-  }
-  header .header-desc {
-    top: 0px;
-    margin-top: 8px;
     font-size: 36px;
   }
+  header .header-desc {
+    margin-top: 8px;
+    font-size: 30px;
+  }
   header img {
-    bottom: 0px;
-    width: 250px;
+    width: 200px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  #about .container-about {
+    width: 60%;
+    height: auto;
+  }
+  #about .container-about h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  #about .container-about p {
+    font-size: 20px;
+    width: 90%;
+    margin-bottom: 72px;
   }
   .proj-img {
     width: 500px;

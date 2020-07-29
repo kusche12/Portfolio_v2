@@ -1,3 +1,6 @@
+/* TODO: FIX THE GREEN LINE ON THE DOWN WHITE ARROW */
+/* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
+
 @import './variables';
 
 .hide-xs {
@@ -7,10 +10,10 @@
 header {
   @include flexAlignCenter();
   height: 100vh;
+  justify-content: space-evenly;
 
   h1 {
     font-size: 40px;
-    padding-top: 24px;
     margin-top: 48px;
   }
 
@@ -22,61 +25,54 @@ header {
   .header-desc {
     font-size: 30px;
     text-align: center;
-    position: relative;
-    top: 500px;
   }
 
   img {
-    width: 300px;
-    position: relative;
-    bottom: 100px;
+    width: 250px;
+    margin-bottom: 48px;
   }
 }
 
 #about {
   .contain-arrows {
     @include flexAlignCenter();
-    position: relative;
-    background-color: $primaryGreen;
-
-    height: 600px;
+    background-color: white;
+    margin-bottom: 72px;
   }
 
   .arrow-down {
     width: 100%;
     height: 50px;
-    background-color: white;
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-    border-width: 10px;
-    border-color: black;
+    background-color: $primaryGreen;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 900;
   }
-
+  .background-container-about {
+    @include flexAlignCenter();
+    background-color: $primaryGreen;
+  }
   .container-about {
     @include flexAlignCenter();
+    justify-content: center;
     width: 80%;
+    min-height: 450px;
     background-color: $primaryGreen;
-    height: 100vh;
 
     h2 {
-      margin-top: 50px;
       color: white;
       font-size: 36px;
       text-align: center;
-      font-weight: 500;
+      font-weight: 800;
     }
 
     p {
       color: white;
       font-family: 'Roboto', sans-serif;
-      font-size: 22px;
+      text-rendering: optimizeLegibility;
+      line-height: 36px;
+      text-align: center;
+      font-size: 20px;
     }
-  }
-
-  .arrow-bottom {
-    background-color: $primaryGreen;
-    position: relative;
-    top: -1px;
   }
 
   .container-tags {
@@ -123,6 +119,7 @@ header {
 .btn-fill {
   color: white;
   background-color: $primaryGreen;
+  border: solid 2px $primaryGreen;
 }
 
 .container-projects {
@@ -267,59 +264,110 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .hide-xs {
     display: inline;
   }
   .hide-md {
     display: none;
   }
-
   nav {
     width: 90%;
-    p {
+    height: 100px;
+    overflow: hidden;
+    .logo {
       float: left;
-      font-size: 24px;
+      font-size: 30px;
+      line-height: 36px;
       a {
         color: $black;
         text-decoration: none;
       }
+    }
+    .logo:after {
+      content: '';
+      display: block;
+      margin: 10 auto; /* This will center the border. */
+      width: 30%; /* Change this to whatever width you want. */
+      border-bottom: 4px solid $primaryGreen;
+      border-top: 4px solid $primaryGreen;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+    .logo:hover:after {
+      width: 45%; /* This will be the new width of your border when on hover */
     }
 
     ul {
       padding: 0px;
       margin: 0px;
       float: right;
+      margin-top: 30px;
       li {
         list-style-type: none;
-        display: inline;
-        font-size: 24px;
+        display: inline-block;
+        font-size: 22px;
         a {
           color: $black;
           text-decoration: none;
-          line-height: 70px;
+          line-height: 30px;
           padding: 5px 15px;
+          transition: 0.4s;
         }
+      }
+      li:after {
+        content: '';
+        display: block;
+        margin: 0 auto; /* This will center the border. */
+        width: 0%; /* Change this to whatever width you want. */
+        border-bottom: 3px solid $primaryGreen;
+        border-top: 3px solid $primaryGreen;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: #808080;
+      }
+      li:hover:after {
+        width: 35%;
       }
     }
   }
   header {
+    justify-content: initial;
+    height: auto;
     h1 {
-      padding-top: 0px;
+      margin-top: 12px;
       margin-bottom: 0px;
-      font-size: 48px;
-    }
-    .header-desc {
-      top: 0px;
-      margin-top: 8px;
       font-size: 36px;
     }
+    .header-desc {
+      margin-top: 8px;
+      font-size: 30px;
+    }
     img {
-      bottom: 0px;
-      width: 250px;
+      width: 200px;
+      margin-bottom: 72px;
     }
   }
+}
 
+@media (min-width: 768px) {
+  #about {
+    .container-about {
+      width: 60%;
+      height: auto;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 20px;
+        width: 90%;
+        margin-bottom: 72px;
+      }
+    }
+  }
   .proj-img {
     width: 500px;
   }

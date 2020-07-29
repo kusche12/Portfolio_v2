@@ -111,22 +111,62 @@ header {
   @include flexAlignCenter();
   margin-top: 48px;
   // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
-  .btn {
-    font-size: 22px;
-    padding: 8px 24px;
-    color: $secondaryGreen;
-    background-color: white;
-    border-radius: 10px;
-    border: solid 2px $secondaryGreen;
+}
+.btn {
+  font-size: 20px;
+  padding: 8px 24px;
+  color: $secondaryGreen;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 2px $secondaryGreen;
+}
+.btn-fill {
+  color: white;
+  background-color: $primaryGreen;
+}
+
+.container-projects {
+  @include flexAlignCenter();
+  margin-top: 72px;
+  .project {
+    @include flexAlignCenter();
+    padding-top: 72px;
+  }
+  .proj-text {
+    width: 360px;
+    h3 {
+      font-weight: 800;
+      font-size: 28px;
+      margin-bottom: 0px;
+    }
+    p {
+      font-size: 24px;
+      margin-top: 8px;
+    }
+  }
+  .proj-buttons {
+    margin-top: 72px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
 
-/*
-@media (min-width: 576px) {
+.proj-img {
+  width: 350px;
+}
 
+.project:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
+  /*
 nav {
   ul {
     list-style-type: none;
@@ -150,8 +190,12 @@ nav {
     float: left;
   }
 }
+*/
+  .proj-img {
+    width: 500px;
+  }
 }
-
+/*
 @media (min-width: 992px) {
 
 }

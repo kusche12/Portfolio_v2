@@ -130,7 +130,7 @@
           <button
             onClick="window.location.href = 'img/resume.pdf'"
             target="_blank"
-            class="btn btn-white"
+            class="btn"
           >
             View my Resume
           </button>
@@ -138,13 +138,95 @@
       </section>
 
       <section id="projects">
-        <div class="project">
-          <img
-            srcset="./img/coffee_xs.png 101w, ./img/coffee_md.png 201w"
-            sizes="(max-width: 767px) 100px, 125px"
-            src="./img/coffee_md.png"
-            alt="cup of coffee"
-          />
+        <div class="container-projects">
+          <div class="project">
+            <picture>
+              <source media="(min-width:992px)" srcset="./img/mixens_lg.png" />
+              <source media="(min-width:768px)" srcset="./img/mixens_md.png" />
+              <img
+                src="./img/mixens_xs.png"
+                alt="Covid tracker web application"
+                class="proj-img"
+              />
+            </picture>
+            <div class="proj-text">
+              <h3>Mixens: Cocktail Journal</h3>
+              <p>
+                React Native & Redux mobile app to save and create custom drink
+                recipes.
+              </p>
+            </div>
+            <div class="proj-buttons">
+              <button onClick="mixens.html" target="_blank" class="btn">
+                Preview
+              </button>
+              <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
+              <button
+                onclick="window.location.href='https://kylekusche.com'"
+                type="button"
+                target="_blank"
+                class="btn btn-fill"
+              >
+                App Store
+              </button>
+            </div>
+          </div>
+
+          <div class="project">
+            <picture>
+              <source media="(min-width:992px)" srcset="./img/covid_lg.png" />
+              <source media="(min-width:768px)" srcset="./img/covid_md.png" />
+              <img
+                src="./img/covid_xs.png"
+                alt="Covid tracker web application"
+                class="proj-img"
+              />
+            </picture>
+            <div class="proj-text">
+              <h3>COVID-19 Tracker</h3>
+              <p>
+                Fully responsive web app to visualize and navigate nationwide
+                coronavirus cases.
+              </p>
+            </div>
+            <div class="proj-buttons">
+              <button onClick="covid.html" target="_blank" class="btn">
+                Preview
+              </button>
+              <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
+              <button onClick="covid.html" target="_blank" class="btn btn-fill">
+                Website
+              </button>
+            </div>
+          </div>
+
+          <div class="project">
+            <picture>
+              <source media="(min-width:992px)" srcset="./img/quiz_lg.png" />
+              <source media="(min-width:768px)" srcset="./img/quiz_md.png" />
+              <img
+                src="./img/quiz_xs.png"
+                alt="Covid tracker web application"
+                class="proj-img"
+              />
+            </picture>
+            <div class="proj-text">
+              <h3>QuizMe</h3>
+              <p>
+                React & Firebase web application to create, save, and play
+                customizable quizzes.
+              </p>
+            </div>
+            <div class="proj-buttons">
+              <button onClick="quiz.html" target="_blank" class="btn">
+                Preview
+              </button>
+              <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
+              <button onClick="quiz.html" target="_blank" class="btn btn-fill">
+                App Store
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

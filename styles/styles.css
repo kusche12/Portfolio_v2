@@ -473,8 +473,10 @@ footer .copyright i {
   .hide-md {
     display: none;
   }
-  nav {
+  #navbar {
     width: 90%;
+  }
+  nav {
     height: 100px;
     overflow: hidden;
   }
@@ -519,7 +521,7 @@ footer .copyright i {
     color: #333333;
     text-decoration: none;
     line-height: 30px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -563,7 +565,16 @@ footer .copyright i {
   }
 }
 
+@media (min-width: 660px) {
+  nav .logo a:after {
+    content: 'Kyle Kusche';
+  }
+}
+
 @media (min-width: 768px) {
+  nav .logo {
+    display: block;
+  }
   #about .container-about {
     width: 60%;
     min-height: 500px;

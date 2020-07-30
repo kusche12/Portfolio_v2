@@ -2,6 +2,7 @@
 /* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
 /* TODO: ANIMATE ON SCROLL */
 /* TODO: MEDIA QUERY FOR 1920X1080 (essentially, make all images and text larger) */
+/* TODO: MAKE THE BUTTONS ACTUALLY WORK AND ADD HOVER EFFECTS AND CURSOR POINTER */
 html * {
   font-family: 'Raleway', sans-serif;
   color: #333333;
@@ -602,9 +603,20 @@ footer .copyright i {
     width: 150px;
     font-size: 18px;
   }
+  footer .icons {
+    width: 50%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
 }
 
 @media (min-width: 992px) {
+  .hide-lg {
+    display: none;
+  }
+  .show-lg {
+    display: block;
+  }
   .project {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -613,7 +625,7 @@ footer .copyright i {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 70vh;
+    height: 75vh;
   }
   .project .proj-img {
     width: 400px;

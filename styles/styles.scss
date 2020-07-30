@@ -2,6 +2,7 @@
 /* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
 /* TODO: ANIMATE ON SCROLL */
 /* TODO: MEDIA QUERY FOR 1920X1080 (essentially, make all images and text larger) */
+/* TODO: MAKE THE BUTTONS ACTUALLY WORK AND ADD HOVER EFFECTS AND CURSOR POINTER */
 
 @import './variables';
 
@@ -417,13 +418,26 @@ footer {
       }
     }
   }
+  footer {
+    .icons {
+      width: 50%;
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+  }
 }
 
 @media (min-width: 992px) {
+  .hide-lg {
+    display: none;
+  }
+  .show-lg {
+    display: block;
+  }
   .project {
     flex-direction: row !important;
     justify-content: space-evenly;
-    height: 70vh;
+    height: 75vh;
     .proj-img {
       width: 400px;
     }

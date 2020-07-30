@@ -1,4 +1,3 @@
-/* TODO: MEDIA QUERY FOR 1920X1080 (essentially, make all images and text larger) */
 /* TODO: MAKE THE PREVIEW BUTTONS LINK TO THE APPROPRIATE PAGES */
 html * {
   font-family: 'Raleway', sans-serif;
@@ -660,6 +659,90 @@ footer .copyright i {
 @media (min-width: 1200px) {
   .container-contact .form-container {
     width: 55%;
+  }
+}
+
+@media (min-width: 1600px) {
+  header h1 {
+    font-size: 48px;
+  }
+  header .header-desc {
+    font-size: 36px;
+  }
+  header img {
+    width: 250px;
+  }
+  header nav .logo {
+    font-size: 36px;
+  }
+  header nav li {
+    font-size: 28px;
+  }
+  #about .arrow-down {
+    height: 80px;
+  }
+  #about .container-about h2 {
+    font-size: 42px;
+  }
+  #about .container-about p {
+    font-size: 26px;
+    line-height: 42px;
+  }
+  #about .container-tags {
+    margin-top: 112px;
+  }
+  #about .tag {
+    width: 200px;
+  }
+  #about .tag .tag-title {
+    font-size: 28px;
+    text-rendering: optimizeLegibility;
+  }
+  #about .tag .tag-desc {
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+  }
+  .container-resume {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+  .btn {
+    font-size: 24px;
+    padding: 12px 24px;
+  }
+  .container-projects .proj-text {
+    width: 450px;
+  }
+  .container-projects .proj-text h3 {
+    font-size: 36px;
+  }
+  .container-projects .proj-text p {
+    font-size: 24px;
+  }
+  .container-projects .proj-buttons .btn {
+    font-size: 24px;
+  }
+  .container-contact h2 {
+    font-size: 42px;
+  }
+  .container-contact p {
+    font-size: 24px;
+  }
+  .container-contact p:nth-child(3) {
+    font-size: 24px;
+  }
+  .container-contact .form-container {
+    height: 400px;
+  }
+  .container-contact .form-container input,
+  .container-contact .form-container textarea {
+    font-size: 22px;
+  }
+  .container-contact .form-container button {
+    font-size: 22px;
+  }
+  footer p {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -288,8 +288,10 @@ footer {
   .hide-md {
     display: none;
   }
-  nav {
+  #navbar {
     width: 90%;
+  }
+  nav {
     height: 100px;
     overflow: hidden;
     .logo {
@@ -328,7 +330,7 @@ footer {
           color: $black;
           text-decoration: none;
           line-height: 30px;
-          padding: 5px 15px;
+          padding: 5px 10px;
           transition: 0.4s;
         }
       }
@@ -369,7 +371,22 @@ footer {
   }
 }
 
+@media (min-width: 660px) {
+  nav {
+    .logo {
+      a:after {
+        content: 'Kyle Kusche';
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
+  nav {
+    .logo {
+      display: block;
+    }
+  }
   #about {
     .container-about {
       width: 60%;

@@ -34,21 +34,25 @@
     <!-- Animate on Scroll & CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#navbar').load('./components/navbar.html');
+        $('#footer').load('./components/footer.html');
+      });
+    </script>
     <title>Kyle Kusche</title>
   </head>
 
   <body>
     <header>
-      <nav class="hide-xs">
-        <p class="logo"><a href="index.html">Kyle Kusche</a></p>
-
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="navbar"></div>
       <h1 class="hide-md">
         Hi, I'm <span class="highlight">Kyle Kusche</span>.
       </h1>
@@ -307,40 +311,7 @@
       </section>
     </main>
 
-    <footer>
-      <div class="icons">
-        <a href="https://github.com/kusche12" target="_blank">
-          <i class="fab fa-github fa-2x hide-lg"></i>
-          <i class="fab fa-github fa-3x hide-xs hide-md show-lg"></i>
-        </a>
-        <a href="mailto:kylerkusche@gmail.com" target="_blank">
-          <i class="fas fa-envelope fa-2x hide-lg"></i>
-          <i class="fas fa-envelope fa-3x hide-xs hide-md show-lg"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/kyle-kusche-29b00014b/"
-          target="_blank"
-        >
-          <i class="fab fa-linkedin-in fa-2x hide-lg"></i>
-          <i class="fab fa-linkedin-in fa-3x hide-xs hide-md show-lg"></i>
-        </a>
-      </div>
-      <p>
-        Icons by
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-          >Freepik</a
-        >,
-        <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a>, &
-        <a
-          href="https://www.flaticon.com/authors/pixel-perfect"
-          title="Pixel perfect"
-          >Pixel perfect</a
-        >
-      </p>
-      <p class="copyright">
-        Created with &hearts; by Kyle Kusche 2020
-      </p>
-    </footer>
+    <div id="footer"></div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

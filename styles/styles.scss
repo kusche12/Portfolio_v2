@@ -1,8 +1,5 @@
-/* TODO: FIX THE GREEN LINE ON THE DOWN WHITE ARROW */
-/* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
-/* TODO: ANIMATE ON SCROLL */
 /* TODO: MEDIA QUERY FOR 1920X1080 (essentially, make all images and text larger) */
-/* TODO: MAKE THE BUTTONS ACTUALLY WORK AND ADD HOVER EFFECTS AND CURSOR POINTER */
+/* TODO: MAKE THE PREVIEW BUTTONS LINK TO THE APPROPRIATE PAGES */
 
 @import './variables';
 
@@ -109,7 +106,6 @@ header {
 .container-resume {
   @include flexAlignCenter();
   margin-top: 48px;
-  // TODO: ADD A HOVER EFFECT ON LARGER VIEWPORT
 }
 .btn {
   font-size: 20px;
@@ -118,11 +114,21 @@ header {
   background-color: white;
   border-radius: 10px;
   border: solid 2px $secondaryGreen;
+  cursor: pointer;
 }
 .btn-fill {
   color: white;
   background-color: $primaryGreen;
   border: solid 2px $primaryGreen;
+}
+.btn:hover {
+  color: $highlightGreen;
+  border-color: $highlightGreen;
+}
+.btn-fill:hover {
+  background-color: $highlightGreen;
+  border-color: $highlightGreen;
+  color: white;
 }
 
 .container-projects {
@@ -245,13 +251,18 @@ footer {
   background-color: $black;
   .icons {
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
     i {
       color: #c4c4c4;
+    }
+    a {
+      i:hover {
+        color: $primaryGreen;
+      }
     }
   }
   p {

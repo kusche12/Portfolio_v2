@@ -1,8 +1,5 @@
-/* TODO: FIX THE GREEN LINE ON THE DOWN WHITE ARROW */
-/* TODO: Found out how to get my fonts more crisp/smooth/higher quality on a colored background */
-/* TODO: ANIMATE ON SCROLL */
 /* TODO: MEDIA QUERY FOR 1920X1080 (essentially, make all images and text larger) */
-/* TODO: MAKE THE BUTTONS ACTUALLY WORK AND ADD HOVER EFFECTS AND CURSOR POINTER */
+/* TODO: MAKE THE PREVIEW BUTTONS LINK TO THE APPROPRIATE PAGES */
 html * {
   font-family: 'Raleway', sans-serif;
   color: #333333;
@@ -195,12 +192,24 @@ header img {
   background-color: white;
   border-radius: 10px;
   border: solid 2px #05ac72;
+  cursor: pointer;
 }
 
 .btn-fill {
   color: white;
   background-color: #0ad48b;
   border: solid 2px #0ad48b;
+}
+
+.btn:hover {
+  color: #05e688;
+  border-color: #05e688;
+}
+
+.btn-fill:hover {
+  background-color: #05e688;
+  border-color: #05e688;
+  color: white;
 }
 
 .container-projects {
@@ -417,7 +426,7 @@ footer {
 
 footer .icons {
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,6 +442,10 @@ footer .icons {
 
 footer .icons i {
   color: #c4c4c4;
+}
+
+footer .icons a i:hover {
+  color: #0ad48b;
 }
 
 footer p {

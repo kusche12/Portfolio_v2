@@ -31,6 +31,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Animate on Scroll & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Kyle Kusche</title>
   </head>
@@ -41,10 +43,10 @@
         <p class="logo"><a href="index.html">Kyle Kusche</a></p>
 
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <h1 class="hide-md">
@@ -83,9 +85,10 @@
           </div>
         </div>
 
-        <div class="container-tags">
+        <div class="container-tags" id="resume">
           <div class="tag">
             <img
+              data-aos="flip-left"
               srcset="./img/house_xs.png 101w, ./img/house_md.png 201w"
               sizes="(max-width: 767px) 100px, 125px"
               src="./img/house_md.png"
@@ -99,6 +102,8 @@
 
           <div class="tag">
             <img
+              data-aos="flip-left"
+              data-aos-delay="100"
               srcset="./img/key_xs.png 101w, ./img/key_md.png 201w"
               sizes="(max-width: 767px) 100px, 125px"
               src="./img/key_md.png"
@@ -112,6 +117,8 @@
 
           <div class="tag">
             <img
+              data-aos="flip-left"
+              data-aos-delay="200"
               srcset="./img/device_xs.png 101w, ./img/device_md.png 201w"
               sizes="(max-width: 767px) 100px, 125px"
               src="./img/device_md.png"
@@ -125,6 +132,8 @@
 
           <div class="tag">
             <img
+              data-aos="flip-left"
+              data-aos-delay="300"
               srcset="./img/coffee_xs.png 101w, ./img/coffee_md.png 201w"
               sizes="(max-width: 767px) 100px, 125px"
               src="./img/coffee_md.png"
@@ -138,7 +147,7 @@
         </div>
         <div class="container-resume">
           <button
-            onClick="window.location.href = 'img/resume.pdf'"
+            onclick="window.open('img/resume.pdf', '_blank')"
             target="_blank"
             class="btn"
           >
@@ -171,11 +180,9 @@
                 <button onClick="mixens.html" target="_blank" class="btn">
                   Preview
                 </button>
-                <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
                 <button
-                  onclick="window.location.href='https://kylekusche.com'"
+                  onclick="window.open('https://apps.apple.com/app/id1524223048', '_blank')"
                   type="button"
-                  target="_blank"
                   class="btn btn-fill"
                 >
                   App Store
@@ -206,10 +213,9 @@
                 <button onClick="covid.html" target="_blank" class="btn">
                   Preview
                 </button>
-                <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
                 <button
-                  onClick="covid.html"
-                  target="_blank"
+                  onclick="window.open('https://info340a-sp20.github.io/project-1-JinSon12/', '_blank')"
+                  type="button"
                   class="btn btn-fill"
                 >
                   Website
@@ -240,13 +246,12 @@
                 <button onClick="quiz.html" target="_blank" class="btn">
                   Preview
                 </button>
-                <!-- TODO: MAKE A JS SCRIPT THAT LINKS THE BUTTONS TO EACH RESPECTIVE WEBSITE ROUTE -->
                 <button
-                  onClick="quiz.html"
-                  target="_blank"
+                  onclick="window.open('https://quiz-maker-2cd84.web.app/', '_blank')"
+                  type="button"
                   class="btn btn-fill"
                 >
-                  App Store
+                  Website
                 </button>
               </div>
             </div>
@@ -320,5 +325,9 @@
         Created with &hearts; by Kyle Kusche 2020
       </p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

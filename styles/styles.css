@@ -216,8 +216,8 @@ header {
 }
 
 header h1 {
-  font-size: 40px;
-  margin-top: 96px;
+  font-size: 36px;
+  margin-top: 24px;
 }
 
 header .header-desc {
@@ -338,21 +338,21 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
+  width: 160px;
   -ms-flex-wrap: 25%;
       flex-wrap: 25%;
   margin-bottom: 24px;
 }
 
 #about .tag .tag-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   margin: 0px;
   margin-bottom: 10px;
 }
 
 #about .tag .tag-desc {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
   text-align: center;
 }

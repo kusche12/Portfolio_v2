@@ -10,8 +10,8 @@ header {
   justify-content: space-evenly;
 
   h1 {
-    font-size: 40px;
-    margin-top: 96px;
+    font-size: 36px;
+    margin-top: 24px;
   }
   .header-desc {
     margin-bottom: 96px;
@@ -85,18 +85,18 @@ header {
 
   .tag {
     @include flexAlignCenter();
-    width: 150px;
+    width: 160px;
     flex-wrap: 25%;
     margin-bottom: 24px;
 
     .tag-title {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 800;
       margin: 0px;
       margin-bottom: 10px;
     }
     .tag-desc {
-      font-size: 18px;
+      font-size: 16px;
       margin: 0px;
       text-align: center;
     }

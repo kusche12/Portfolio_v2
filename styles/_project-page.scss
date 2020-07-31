@@ -4,26 +4,27 @@
   width: 90%;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   a {
     text-decoration: none;
   }
   i {
     color: $primaryGreen;
     position: relative;
-    top: 8px;
+    top: 10px;
   }
   p {
     color: $primaryGreen;
-    font-weight: 600;
+    font-weight: 800;
+    height: 50px;
   }
 }
 
 .project-main-container {
   @include flexAlignCenter();
   margin-top: 24px;
-  padding: 12px;
+
   .proj-about-container {
+    width: 350px;
     h2 {
       font-weight: 800;
       color: $gray;
@@ -34,7 +35,7 @@
       color: $gray;
       font-size: 20px;
     }
-    .proj-about-main {
+    .proj-about-title {
       margin-bottom: 72px;
       h1 {
         font-weight: 800;
@@ -75,5 +76,73 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 992px) {
+  .project-main-container {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    .proj-about-container {
+      width: 400px;
+      .proj-about-title {
+        margin-bottom: 24px;
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .proj-links {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .proj-about-list {
+        li {
+          line-height: 24px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .project-main-container {
+    .proj-about-container {
+      .proj-about-title {
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 22px;
+        }
+        .proj-links {
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .proj-about-list {
+        li {
+          line-height: 30px;
+          font-size: 20px;
+        }
+      }
+    }
+    img {
+      width: 600px;
+    }
+  }
 }

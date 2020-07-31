@@ -31,9 +31,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .project-back a {
@@ -43,12 +40,13 @@ body {
 .project-back i {
   color: #0ad48b;
   position: relative;
-  top: 8px;
+  top: 10px;
 }
 
 .project-back p {
   color: #0ad48b;
-  font-weight: 600;
+  font-weight: 800;
+  height: 50px;
 }
 
 .project-main-container {
@@ -63,7 +61,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 24px;
-  padding: 12px;
+}
+
+.project-main-container .proj-about-container {
+  width: 350px;
 }
 
 .project-main-container .proj-about-container h2 {
@@ -78,23 +79,23 @@ body {
   font-size: 20px;
 }
 
-.project-main-container .proj-about-container .proj-about-main {
+.project-main-container .proj-about-container .proj-about-title {
   margin-bottom: 72px;
 }
 
-.project-main-container .proj-about-container .proj-about-main h1 {
+.project-main-container .proj-about-container .proj-about-title h1 {
   font-weight: 800;
   margin-bottom: 8px;
   font-size: 28px;
 }
 
-.project-main-container .proj-about-container .proj-about-main p {
+.project-main-container .proj-about-container .proj-about-title p {
   margin-top: 4px;
   margin-bottom: 0px;
   font-size: 22px;
 }
 
-.project-main-container .proj-about-container .proj-about-main .proj-links {
+.project-main-container .proj-about-container .proj-about-title .proj-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,16 +106,16 @@ body {
   margin-top: 8px;
 }
 
-.project-main-container .proj-about-container .proj-about-main .proj-links i {
+.project-main-container .proj-about-container .proj-about-title .proj-links i {
   color: #666666;
 }
 
-.project-main-container .proj-about-container .proj-about-main .proj-links a {
+.project-main-container .proj-about-container .proj-about-title .proj-links a {
   color: #666666;
   font-size: 24px;
 }
 
-.project-main-container .proj-about-container .proj-about-main .proj-links .icon-spaced {
+.project-main-container .proj-about-container .proj-about-title .proj-links .icon-spaced {
   margin-left: 36px;
 }
 
@@ -126,6 +127,68 @@ body {
 .project-main-container .proj-about-container .proj-about-list li {
   line-height: 30px;
   font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .project-main-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project-main-container .proj-about-container {
+    width: 400px;
+  }
+  .project-main-container .proj-about-container .proj-about-title {
+    margin-bottom: 24px;
+  }
+  .project-main-container .proj-about-container .proj-about-title h1 {
+    font-size: 24px;
+  }
+  .project-main-container .proj-about-container .proj-about-title p {
+    font-size: 18px;
+  }
+  .project-main-container .proj-about-container .proj-about-title .proj-links a {
+    font-size: 20px;
+  }
+  .project-main-container .proj-about-container h2 {
+    font-size: 18px;
+  }
+  .project-main-container .proj-about-container p {
+    font-size: 16px;
+  }
+  .project-main-container .proj-about-container .proj-about-list li {
+    line-height: 24px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .project-main-container .proj-about-container .proj-about-title h1 {
+    font-size: 28px;
+  }
+  .project-main-container .proj-about-container .proj-about-title p {
+    font-size: 22px;
+  }
+  .project-main-container .proj-about-container .proj-about-title .proj-links a {
+    font-size: 22px;
+  }
+  .project-main-container .proj-about-container h2 {
+    font-size: 24px;
+  }
+  .project-main-container .proj-about-container p {
+    font-size: 20px;
+  }
+  .project-main-container .proj-about-container .proj-about-list li {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .project-main-container img {
+    width: 600px;
+  }
 }
 
 .hide-xs {

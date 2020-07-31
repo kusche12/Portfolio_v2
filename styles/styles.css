@@ -138,6 +138,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-top: 0px;
   }
   .project-main-container .proj-about-container {
     width: 400px;

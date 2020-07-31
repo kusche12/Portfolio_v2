@@ -1,6 +1,5 @@
-/* TODO: MAKE THE PREVIEW BUTTONS LINK TO THE APPROPRIATE PAGES */
-
 @import './variables';
+@import './project-page';
 
 .hide-xs {
   display: none;
@@ -8,12 +7,14 @@
 
 header {
   @include flexAlignCenter();
-  height: 100vh;
   justify-content: space-evenly;
 
   h1 {
     font-size: 40px;
-    margin-top: 48px;
+    margin-top: 96px;
+  }
+  .header-desc {
+    margin-bottom: 96px;
   }
 
   .highlight {
@@ -362,11 +363,12 @@ footer {
     }
     .header-desc {
       margin-top: 8px;
+      margin-bottom: 24px;
       font-size: 30px;
     }
     img {
       width: 200px;
-      margin-bottom: 72px;
+      margin-bottom: 96px;
     }
   }
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Kyle Kusche" />
+    <meta
+      name="description"
+      content="Portfolio for frontend web developer Kyle Kusche"
+    />
+    <meta
+      name="keywords"
+      content="kyle,kusche,portfolio,web,developer,frontend,mobile,application"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b5bcd3f315.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#navbar').load('../components/navbar.html');
+        $('#footer').load('../components/footer.html');
+      });
+    </script>
+    <title>Kyle Kusche</title>
+  </head>
+  <body>
+    <header>
+      <div class="project-back">
+        <a href="../index.html">
+          <p>
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i> Go Back
+          </p>
+        </a>
+      </div>
+      <div id="navbar"></div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="project-main-container">
+          <div class="proj-image-container">
+            <img
+              srcset="
+                ../img/mixens_xs.png  312w,
+                ../img/mixens_md.png  624w,
+                ../img/mixens_lg.png 1248w
+              "
+              sizes="(min-width: 10px) and (max-width: 767px) 300px, (min-width: 768px) and (max-width: 991px) 350px, (min-width: 992px) 450px, "
+              src="./img/house_md.png"
+              alt="house"
+            />
+          </div>
+          <div class="proj-about-container">
+            <div class="proj-about-main">
+              <h1>Mixens: Cocktail Journal</h1>
+              <p>Mobile Application Development</p>
+              <p>Summer 2020</p>
+              <div class="proj-links">
+                <p>
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <a href="https://github.com/kusche12/mixens" target="_blank"
+                    >Github</a
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-apple icon-spaced" aria-hidden="true"></i>
+                  <a
+                    href="https://apps.apple.com/app/id1524223048"
+                    target="_blank"
+                    >App Store</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="proj-about-desc">
+              <h2>Description</h2>
+              <p>
+                Create & Save unique drink recipes at the click of a button.
+                Either find your drinks directly on your phone or tablet or
+                create an account to access your drinks from anyone’s device.
+              </p>
+            </div>
+            <div class="proj-about-list">
+              <h2>Technology Stack</h2>
+              <ul>
+                <li>- React Native</li>
+                <li>- Redux Persist</li>
+                <li>- Google Firebase</li>
+              </ul>
+            </div>
+            <div class="proj-about-list">
+              <h2>What I learned</h2>
+              <ul>
+                <li>- CRUD operations with Async Storage</li>
+                <li>- Redux Persist</li>
+                <li>- Google Firebase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>

@@ -457,6 +457,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  html * {
+    text-rendering: optimizeLegibility;
+  }
   .hide-lg {
     display: none;
   }

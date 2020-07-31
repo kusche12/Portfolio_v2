@@ -187,7 +187,10 @@ body {
     font-size: 20px;
   }
   .project-main-container img {
-    width: 600px;
+    width: 550px;
+  }
+  .project-main-container .covid-img {
+    width: 650px;
   }
 }
 
@@ -818,6 +821,9 @@ footer .copyright i {
 }
 
 @media (min-width: 992px) {
+  html * {
+    text-rendering: optimizeLegibility;
+  }
   .hide-lg {
     display: none;
   }

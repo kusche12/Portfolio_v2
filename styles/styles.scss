@@ -1,5 +1,5 @@
-@import './variables';
-@import './project-page';
+@import "./variables";
+@import "./project-page";
 
 .hide-xs {
   display: none;
@@ -67,7 +67,7 @@ header {
 
     p {
       color: white;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       text-rendering: optimizeLegibility;
       line-height: 36px;
       text-align: center;
@@ -305,7 +305,7 @@ footer {
       }
     }
     .logo:after {
-      content: '';
+      content: "";
       display: block;
       margin: 10 auto; /* This will center the border. */
       width: 30%; /* Change this to whatever width you want. */
@@ -336,7 +336,7 @@ footer {
         }
       }
       li:after {
-        content: '';
+        content: "";
         display: block;
         margin: 0 auto; /* This will center the border. */
         width: 0%; /* Change this to whatever width you want. */
@@ -377,7 +377,7 @@ footer {
   nav {
     .logo {
       a:after {
-        content: 'Kyle Kusche';
+        content: "Kyle Kusche";
       }
     }
   }
@@ -448,6 +448,7 @@ footer {
     }
   }
   footer {
+    margin-top: 0px;
     .icons {
       width: 50%;
       margin-top: 48px;

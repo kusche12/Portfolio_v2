@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Kyle Kusche" />
+    <meta
+      name="description"
+      content="Portfolio for frontend web developer Kyle Kusche"
+    />
+    <meta
+      name="keywords"
+      content="kyle,kusche,portfolio,web,developer,frontend,mobile,application"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b5bcd3f315.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#navbar').load('../components/navbar.html');
+        $('#footer').load('../components/footer.html');
+      });
+    </script>
+    <title>Kyle Kusche</title>
+  </head>
+  <body>
+    <header>
+      <div class="project-back hide-md">
+        <a href="../index.html">
+          <p>
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i> Go Back
+          </p>
+        </a>
+      </div>
+      <div id="navbar"></div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="project-main-container">
+          <!-- <div class="proj-image-container"> -->
+            <picture>
+              <img
+                src="../img/bing.png"
+                alt="Microsoft Bing / Bing@Work"
+                class="proj-image-container"
+              />
+            </picture>
+          <!-- </div> -->
+          <div class="proj-about-container">
+            <div class="proj-about-title">
+              <h1>Microsoft Bing / Bing@Work</h1>
+              <p>Software Engineer</p>
+              <p>July 2021 - Present</p>
+              <div class="proj-links">
+                <p>
+                  <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  <a href="https://learn.microsoft.com/en-us/deployoffice/microsoft-search-bing" target="_blank"
+                    >Bing@Work</a
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-comment icon-spaced" aria-hidden="true"></i>
+                  <a
+                    href="https://www.microsoft.com/en-us/edge/bing/chat-enterprise?OCID=AIDcmmcp111dbt_SEM_PMD_Q1FY24_Bing%20Chat%20Enterprise_SEM_Mixed_2p_07.18.2023&gclid=Cj0KCQjw8NilBhDOARIsAHzpbLAYXUDxCF8eRFnBlascDihB75P6-Guwtqh6D0o8n228QzjNXpIVOBkaAvVkEALw_wcB&form=MA13FJ"
+                    target="_blank"
+                    >Bing Chat AI</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="proj-about-desc">
+              <h2>Description</h2>
+              <p>
+                Bing@Work enables Enterprise Search in Bing to help our customers find documents, people, and messages.
+                More recently, I have been working on the integration of OpenAI's GPT4 to create the user-interface for Bing Chat AI.
+              </p>
+            </div>
+            <div class="proj-about-list">
+              <h2>Tech Stack</h2>
+              <ul>
+                <li>- React, TypeScript, JS Testing Tools</li>
+                <li>- C-Sharp & ASP.NET</li>
+                <li>- Microsoft Azure</li>
+              </ul>
+            </div>
+            <div class="proj-about-list">
+              <h2>Experience</h2>
+              <ul>
+                <li>- Develop software used by over 1 Million DAU</li>
+                <li>- Improved mobile UI and Dark Mode for Bing</li>
+                <li>- Work directly with GPT4 to return the best user search experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>

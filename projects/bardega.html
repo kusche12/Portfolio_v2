@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Kyle Kusche" />
+    <meta
+      name="description"
+      content="Portfolio for frontend web developer Kyle Kusche"
+    />
+    <meta
+      name="keywords"
+      content="kyle,kusche,portfolio,web,developer,frontend,mobile,application"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b5bcd3f315.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#navbar').load('../components/navbar.html');
+        $('#footer').load('../components/footer.html');
+      });
+    </script>
+    <title>Kyle Kusche</title>
+  </head>
+  <body>
+    <header>
+      <div class="project-back hide-md">
+        <a href="../index.html">
+          <p>
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i> Go Back
+          </p>
+        </a>
+      </div>
+      <div id="navbar"></div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="project-main-container">
+          <!-- <div class="proj-image-container"> -->
+            <picture>
+              <img
+                src="../img/bardega.png"
+                alt="Microsoft Bing / Bing@Work"
+                class="proj-image-container"
+              />
+            </picture>
+          <!-- </div> -->
+          <div class="proj-about-container">
+            <div class="proj-about-title">
+              <h1>Bardega</h1>
+              <p>Freelance App Developer</p>
+              <p>January 2021 - July 2021</p>
+              <div class="proj-links">
+                <p>
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <a href="https://github.com/kusche12/Bardega" target="_blank">Github</a>
+                </p>
+                <p>
+                  <i class="fa fa-desktop icon-spaced" aria-hidden="true"></i>
+                  <a href="https://bardegacocktails.com/" target="_blank">Website</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="proj-about-desc">
+              <h2>Description</h2>
+              <p>
+                Bardega was a 6-month contract for the Cul+ure Collective hospitality company. The app was a social media platform used to create, share, and discover new cocktails.
+                It was hosted on the iOS and Android app stores for a year and had over 200 downloads.
+              </p>
+            </div>
+            <div class="proj-about-list">
+              <h2>Tech Stack</h2>
+              <ul>
+                <li>- React  Native</li>
+                <li>- Google Firebase</li>
+                <li>- iOS and Android hosting platforms</li>
+              </ul>
+            </div>
+            <div class="proj-about-list">
+              <h2>Experience</h2>
+              <ul>
+                <li>- My first profitable entrepreneurial job</li>
+                <li>- Developed a fully-functional social media app with live updates and CRUD functions</li>
+                <li>- Worked with a designer and marketing team to make major design decisions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>

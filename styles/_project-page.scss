@@ -1,5 +1,9 @@
 @import './variables';
 
+.proj-image-container {
+  width: 300px;
+}
+
 .project-back {
   width: 90%;
   display: flex;
@@ -77,6 +81,10 @@
 }
 
 @media (min-width: 992px) {
+  .proj-image-container {
+    width: 600px;
+  }
+
   .project-main-container {
     flex-direction: row-reverse;
     justify-content: space-evenly;

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Kyle Kusche" />
+    <meta
+      name="description"
+      content="Portfolio for frontend web developer Kyle Kusche"
+    />
+    <meta
+      name="keywords"
+      content="kyle,kusche,portfolio,web,developer,frontend,mobile,application"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b5bcd3f315.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#navbar').load('../components/navbar.html');
+        $('#footer').load('../components/footer.html');
+      });
+    </script>
+    <title>Kyle Kusche</title>
+  </head>
+  <body>
+    <header>
+      <div class="project-back hide-md">
+        <a href="../index.html">
+          <p>
+            <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i> Go Back
+          </p>
+        </a>
+      </div>
+      <div id="navbar"></div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="project-main-container">
+          <!-- <div class="proj-image-container"> -->
+            <picture>
+              <img
+                src="../img/rnai.png"
+                alt="Roundnet AI Mobile App"
+                class="proj-image-container"
+              />
+            </picture>
+          <!-- </div> -->
+          <div class="proj-about-container">
+            <div class="proj-about-title">
+              <h1>Roundnet AI</h1>
+              <p>Co-Founder</p>
+              <p>November 2022 - Present</p>
+              <div class="proj-links">
+                <p>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.instagram.com/roundnet.ai/" target="_blank"
+                    >Instagram</a
+                  >
+                </p>
+                <p>
+                  <i class="fa fa-download icon-spaced" aria-hidden="true"></i>
+                  <a
+                    href="https://linktr.ee/roundnet.ai"
+                    target="_blank"
+                    >Download</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="proj-about-desc">
+              <h2>Description</h2>
+              <p>
+                Roundnet AI is a mobile application that allows users to upload their roundnet (spikeball) gameplay to analyze, export, and share rallies. The app is
+                available on iOS and Android, and we have hundreds of users located all around the world!
+              </p>
+            </div>
+            <div class="proj-about-list">
+              <h2>Tech Stack</h2>
+              <ul>
+                <li>- React Native</li>
+                <li>- AWS</li>
+                <li>- Machine Learning Models</li>
+              </ul>
+            </div>
+            <div class="proj-about-list">
+              <h2>Experience</h2>
+              <ul>
+                <li>- Developed the entire stack for this AI Mobile App</li>
+                <li>- Marketing to over 500 Instagram followers daily</li>
+                <li>- Working with roundnet partner teams to accelerate the growth of our business</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>
